@@ -82,7 +82,10 @@
       <SubType>Code</SubType>
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Direct2DControl.cs" />
+    <Compile Include="BitmapImageMatrixView.cs" />
+    <Compile Include="Direct2DControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Direct2DTextMatrixView.cs" />
     <Compile Include="ExtTextOutMatrixView.cs" />
     <Compile Include="FormattedTextMatrixView.cs" />
@@ -101,6 +104,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="Window1.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ball.jpg" />
+    <Resource Include="Resources\ball.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
 </Project>

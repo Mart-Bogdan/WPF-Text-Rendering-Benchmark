@@ -58,9 +58,10 @@ namespace WpfTextBenchmark
 		
 		protected override void OnRender(DrawingContext drawingContext)
 		{
-			foreach (MyText text in texts) {
-				text.line.Draw(drawingContext, text.Position, InvertAxes.None);
-			}
+            foreach (MyText text in texts)
+            {
+                text.line.Draw(drawingContext, text.Position, InvertAxes.None);
+            }
 			Dispatcher.BeginInvoke(DispatcherPriority.Input, new Action(delegate { OnFrameRendered(EventArgs.Empty); }));
 		}
 		

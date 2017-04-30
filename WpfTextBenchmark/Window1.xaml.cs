@@ -123,6 +123,7 @@ namespace WpfTextBenchmark
 					if (framerateText != null) framerateText.Remove();
 					double framerate = frameCounter / stopwatch.Elapsed.TotalSeconds;
 					framerateText = v.AddText(framerate.ToString("f1"), 16, Brushes.White);
+                    Console.WriteLine(framerate.ToString("f1"));
 					stopwatch.Restart();
 					frameCounter = 0;
 				}
@@ -145,7 +146,8 @@ namespace WpfTextBenchmark
 		
 		void GlyphRunButton_Click(object sender, RoutedEventArgs e)
 		{
-			v = new GlyphMatrixView();
+            //v = new GlyphMatrixView();
+            v = new BitmapImageMatrixView();
 			InitView();
 		}
 		
