@@ -143,13 +143,18 @@ namespace WpfTextBenchmark
 				v.Refresh();
 			}
 		}
-		
-		void GlyphRunButton_Click(object sender, RoutedEventArgs e)
-		{
-            //v = new GlyphMatrixView();
+
+        void GlyphRunButton_Click(object sender, RoutedEventArgs e)
+        {
+            v = new GlyphMatrixView();
+            InitView();
+        }
+
+        void BitmapImageButton_Click(object sender, RoutedEventArgs e)
+        {
             v = new BitmapImageMatrixView();
-			InitView();
-		}
+            InitView();
+        }
 		
 		void TextLineButton_Click(object sender, RoutedEventArgs e)
 		{

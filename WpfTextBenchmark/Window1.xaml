@@ -9,9 +9,10 @@
 		<StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
 			<Button Click="TextBlockButton_Click">TextBlock</Button>
 			<Button Click="FormattedTextButton_Click">FormattedText</Button>
-			<Button Click="TextLineButton_Click">TextLine</Button>
-			<Button Click="GlyphRunButton_Click">GlyphRun</Button>
-			<Button Name="Direct2DButton" Click="Direct2DButton_Click" Margin="2,0,0,0">Direct2D</Button>
+            <Button Click="TextLineButton_Click">TextLine</Button>
+            <Button Click="GlyphRunButton_Click">GlyphRun</Button>
+            <Button Click="BitmapImageButton_Click">BitmapImage</Button>
+            <Button Name="Direct2DButton" Click="Direct2DButton_Click" Margin="2,0,0,0">Direct2D</Button>
 			<Button Click="GDIButton_Click">WinForms</Button>
 			<Button Click="ExtTextOutButton_Click">GDI</Button>
 			<Button Click="GDIPlusButton_Click">GDI+</Button>
